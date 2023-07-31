@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+
+
 
 function App() {
   const [count, setCount] = useState(1);
@@ -28,11 +30,21 @@ function App() {
     setPay10ToChange(false);
     setIncreaseBy(1);
   }
-
+useEffect(()=>{
+  if (count >= 100) 
+  // [make this remove the 2 buttons above and insert ]
+  alert("You Win")
+})
   return (
+    
     <main>
+      
       <p>Nicki's React State 🤓 Lab</p>
       <h1>Current Score: {count}</h1>
+      {count >= 100 ? (
+        <button onClick={() => window.location.reload()}>Play Again</button>
+      ) : (
+        <>
       <button onClick={handleIncreaseNum}>+{increaseBy}</button>
       {count >= 10 && !pay10ToChange && (
         <button onClick={handleChangeIncrease}>
@@ -40,7 +52,10 @@ function App() {
         </button>
       )}
       {count >= 100 && (
+        
         <button onClick={handleGameRestart}>You Win! Click to Restart</button>
+      )}
+       </>
       )}
     </main>
   );
