@@ -39,7 +39,7 @@ function App() {
 
       {!hasWon ? (
         <div>
-          <IncrementButton onClick={handleIncrement} incrementor={incrementor} />
+          <IncrementButton onClick={handleIncrement} incrementor={incrementor} /> <br /><br />
           <PayButton onClick={payPoints} incrementor={incrementor} />
         </div>
       ) : (
