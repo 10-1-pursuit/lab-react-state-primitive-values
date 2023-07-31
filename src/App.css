@@ -1,5 +1,117 @@
-/* Your code here! */
+body {
+  background-color: rgb(34, 55, 75);
+  align-items: center;
+}
+
+p {
+  color: aliceblue;
+}
+
 main {
   margin: 25px auto;
   width: 50%;
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+}
+
+/* 
+#hideDiv {
+  background: red;
+  width: 400px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+} 
+*/
+
+.buttons {
+  margin: 20px;
+  gap: 20px;
+  align-self: center;
+  color: #fff000;
+}
+
+h2 {
+  font-size: xx-large;
+  text-align: center;
+  color: #fff000;
+}
+
+h1 {
+  text-align: center;
+}
+
+.points {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 10%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  align-items: center;
+  margin-left: 162px;
+  text-shadow: 2px 2px #ffffff;
+}
+
+.points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.points:not(:disabled):hover,
+.points:not(:disabled):focus {
+  outline: 0;
+  background: #fff000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.points:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+/* CSS */
+.levelup {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 3px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.levelup:after {
+  content: "";
+  background-color: #fff000;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.levelup:hover:after {
+  top: 0px;
+  left: 0px;
 }
