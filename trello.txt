@@ -1,35 +1,11 @@
-# React State Lab
-
-Build a simple clicker "game" that makes use of React, props, and state!
-
-![Example of the clicker game.](./assets/clicker-game.gif)
-
----
-
-## Lab Setup
-
-### Getting started
-
-1. Fork and clone this repository.
-
-1. Navigate to the cloned repository's directory on your command line. Then, run the following command:
-
-   ```
-   npm install
-   ```
-
-   This will install the libraries needed.
-
-1. Open up the repository in VSCode. Follow the instructions below to complete the Lab.
-
-1. Deploy this application to Netlify and add the link to your netlify site below:
+not an actual trello but here's my plan 
 
 
-  >https://stalwart-alfajores-f62be6.netlify.app/
+put the text on the page
+add the buttons 
 
-## Instructions
-
-You will be building an application that is similar to popular "clicker" games. The game has the following rules:
+set up click counter 
+after 
 
 - Clicking the "+X" button will increase the score by `X`. The value of `X` starts at 1.
 - If the user has at least 10 points and clicks the button "Pay 10 points to change from +X to +Y", the value of `X` will increase by 1. For example, at the beginning of the game the incrementor will be "+1". If you pay 10 points, the incrementor will change to "+2".
