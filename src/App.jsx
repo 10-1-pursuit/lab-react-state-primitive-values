@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react'
 import "./App.css";
-import Score from"./components/Score.jsx"
+import Score from "./components/Score.jsx"
 function App() {
 
   const [count, setCount] = useState(0)
@@ -16,7 +16,7 @@ function App() {
       </button>
 
       <Score />
-
+      <Alert />
     </main>
   );
 }
