@@ -40,7 +40,9 @@ You will be building an application that is similar to popular "clicker" games. 
 The following is a list of more detailed requirements. As always, check the tests to see exactly what is being tested.
 
 - Display the current score to the user, starting from a score of `0`
-  - Use the _exact_ text: `Current Score: ` followed by the score
+
+- Use the _exact_ text: `Current Score: ` followed by the score
+
 - Clicking a button increments the score by one
   - The button text should have the _exact_ text: `+1`
 - Have a button where the user can spend `10` points to increase the value of each click by `1`
