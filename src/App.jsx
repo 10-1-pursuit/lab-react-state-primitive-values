@@ -3,9 +3,16 @@ import "./App.css";
 
 function App () {
     return (
+      <>
       <main>
-        <p>React State Lab</p>
+        <h1>
+        {/* React State Lab */}
+        Current Score: 0
+          </h1>
+      <input type="button" />
       </main>
+      </>
+
     );
 }
 
