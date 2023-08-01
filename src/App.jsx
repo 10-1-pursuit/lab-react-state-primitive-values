@@ -9,7 +9,7 @@ function App () {
         {/* React State Lab */}
         Current Score: 0
           </h1>
-      <input type="button" />
+      <button type={+1} button/>
       </main>
       </>
 
