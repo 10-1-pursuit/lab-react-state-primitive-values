@@ -8,8 +8,9 @@ function App () {
  
     return (
       <main>
+        
        <Incrementor />
-      
+    
       </main>
     );
 }
