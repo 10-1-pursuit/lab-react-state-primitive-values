@@ -8,24 +8,45 @@ function App() {
 	const [step, setStep] = useState(1);
 
 	function handleCount() {
-		setScore((c) => c + step);
+		if (score < 100) {
+			setScore((c) => c + step);
+		}
 	}
 
 	function handleStep() {
-		setStep((s) => {
-			s + 1;
-		});
+		if (score >= 10 && score < 100) {
+			setScore((c) => c - 10);
+			setStep((s) => {
+				return s + 1;
+			});
+		} else {
+			alert(`You can't afford that!`);
+		}
+	}
+
+	function handleReset() {
+		setScore(0);
+		setStep(1);
 	}
 
 	return (
 		<main>
 			<h1>Current Score: {score}</h1>
 
-			<button onClick={handleCount}>+{step}</button>
+			{score >= 100 ? (
+				<>
+					<h2>You Win!</h2>
+					<button onClick={handleReset}>Play Again?</button>
+				</>
+			) : (
+				<>
+					<button onClick={handleCount}>+{step}</button>
 
-			<button onClick={handleStep}>
-				Pay 10 points to change from +{step} to +{step + 1}
-			</button>
+					<button onClick={handleStep}>
+						Pay 10 points to change from +{step} to +{step + 1}
+					</button>
+				</>
+			)}
 		</main>
 	);
 }
