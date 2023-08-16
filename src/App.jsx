@@ -4,7 +4,9 @@ import "./App.css";
 
 function App() {
   const [score,setScore]= useState(0)
-  const [nextLevel,setnextLevel]= useState(1)
+    const [points,setPoints]= useState(1)
+
+  // const [nextLevel,setnextLevel]= useState(1)
 
   return ( 
     <>
@@ -13,9 +15,15 @@ function App() {
           {/* React State Lab */}
           Current Score: {score}
         </h1>
-        <button onClick={ (se) => {setScore(score+1)} }> +{nextLevel }
-          +1🌹 
+        <button onClick={ (se) => {setScore(score+1)} }> +{points}
+          🌹
         </button>     
+        <br /><br />
+
+        <button onClick={  ()=>{setScore(score-10),setPoints(points +1)} 
+      }> 
+        Pay 10 to change from +1 to +2
+         </button> 
      </main>
     </>
 
