@@ -28,15 +28,17 @@ function App() {
   return (
     <main>
       {counting < 100 ? (
-        <>
+        <div>
           <h2>Current Score: {counting}</h2>
           <button className="increment" onClick={AddScore}>
             +{increment}
-          </button>
+          </button>{" "}
+          {""}
+          
           <button className="payingpoints" onClick={PayingPoints}>
             Pay 10 points to change from +{increment} to +{increment + 1}
           </button>
-        </>
+        </div>
       ) : (
         <>
           <h2 className="winning">'You Win!'</h2>
