@@ -3,3 +3,8 @@ main {
   margin: 25px auto;
   width: 50%;
 }
+
+div.current_score {
+  font-size:xx-large;
+  font-weight: bold;
+}

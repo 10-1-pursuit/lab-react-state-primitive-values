@@ -10,7 +10,7 @@ Build a simple clicker "game" that makes use of React, props, and state!
 
 ### Getting started
 
-1. Fork and clone this repository.
+1. Fork and clone this repository.👍🏽 
 
 1. Navigate to the cloned repository's directory on your command line. Then, run the following command:
 
@@ -55,3 +55,5 @@ The following is a list of more detailed requirements. As always, check the test
     - Clicking on this button starts the game over again with a score of 0, a `+1` button, etc.
   - Keep the user's score on the screen
   - Do not show the buttons to add to the score or pay points.
+
+
